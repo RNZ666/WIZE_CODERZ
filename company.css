@@ -1,0 +1,237 @@
+main{
+    flex: 1;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(bg.jpg);
+   height: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+   
+}
+
+a.me-4:hover svg {
+    fill: #bebbbb;
+}
+
+a:hover svg.bi-instagram {
+    fill: #bebbbb;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Grandiflora One', cursive;
+    font-weight: 300;
+}
+
+.btn:hover{
+    color: #FFC47E;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.card {
+    animation: fadeIn 0.8s ease-in-out;
+    box-shadow:rgb(0, 0, 0) 0 0 10px ;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    border-left: #bebbbb 1px solid;
+    border-top: #bebbbb 1px solid;
+}
+
+
+.card-title{
+    font-family: 'Passion One', sans-serif;
+    margin-bottom: 20px;
+    background: transparent;
+    
+}
+
+.card-text{
+    
+    margin-bottom: 10px;
+   
+}
+
+.card-img-top{
+    height: 200px;
+   
+    
+}
+
+.color-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 60vh;
+}
+
+.custom-margin {
+    margin-top: 6rem; 
+    margin-bottom: 6rem; 
+}
+
+footer {
+    background-color: transparent;
+    backdrop-filter:blur(4px) ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 10px;
+    border-top:2px solid whitesmoke;
+    
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    
+}
+
+footer:hover {
+    color: #000000;
+}
+
+h1 {
+    animation: slideInFromLeft 0.8s ease-in-out;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 150px;
+    text-shadow:0 0 3px #a9d0ff;
+    color: rgb(237, 237, 237);
+}
+
+h2{
+    animation: slideInFromLeft 0.8s ease-in-out;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 70px;
+    text-shadow:0 0 3px #a9d0ff;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    background-image: url('C:/Users/alexa/Downloads/MADCODER.png');
+    background: no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+}
+
+.about{
+    
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: #d6d6d6;
+    text-shadow: 0 0 1px  rgb(0, 0, 0);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+
+.lead{
+    
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #d6d6d6;
+    text-shadow: 0 0 3px  rgb(0, 0, 0);
+   
+    
+}
+
+.lead1{
+    
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #d6d6d6;
+    text-shadow: 0 0 3px  rgb(0, 0, 0);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-bottom:1px solid white ;
+    border-left:1px solid white;
+}
+
+.navbar-brand img{
+    height: 130px;
+    width: 140px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.nav-item{
+    
+    border-radius: 1px;
+    
+}
+.nav-link{ 
+    transition: all 0.3s ease;
+    color: rgb(255, 255, 255);
+    text-shadow:0 0 3px rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600px;
+    font-family: 'Teko', sans-serif;
+  }
+  .nav-link:hover{
+    background:linear-gradient(#6aa9f6, rgb(255, 255, 255));
+    border-radius: 5px;
+}
+
+.singleCol {
+    
+    max-width: 750px;
+}
+
+.text-center img{
+    height: 280px;
+    width: 250px;
+    border: 2px solid rgb(255, 222, 222);
+    border-radius: 1%;
+}
+
+
+
+@media (max-width: 767.98px) {
+    .color-overlay {
+        min-height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
