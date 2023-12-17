@@ -211,20 +211,30 @@ header {
     [class*="col-"] {
       width: 100%;
     }
+    h1 {
+        animation: slideInFromLeft 0.8s ease-in-out;
+        font-family: 'Hedvig Letters Serif', serif;
+        font-size: 100px;
+        text-shadow:0 0 3px #a9d0ff;
+        color: rgb(237, 237, 237);
+        padding:0 10px 0  ;
+
+    }
+    
   }
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.action_btn i{
+    color: rgb(0, 0, 0);
+    margin-left:50%;
+    padding-top: 50px;
+    font-size: 50px;
+    text-shadow:0 0 4px #a9d0ff;
+    transition: 2 ease;
 }
 
+.action_btn i:hover{
+    scale: 1.05;
+    color: whitesmoke;
+}
 @keyframes slideInFromLeft {
     from {
         opacity: 0;
